@@ -9,8 +9,6 @@ import fr.softeam.kata.romanNumerals.RomanNumeral;
 
 public class RomanNumeralTest {
 	
-	
-
 	@Test
 	public void convert3ToIII() {
 		Assert.assertEquals("III",RomanNumeral.convertArabicToRoman(3));
