@@ -7,16 +7,20 @@ public class RomanNumeral {
 	 * @return Roman number
 	 */
 	public static String convertArabicToRoman(int arabicNumber) {
+		StringBuilder romanNumber = new StringBuilder();
 		
 		if(arabicNumber == 5){
-			return "V";
+			romanNumber.append("V");
 		}
 		
-		StringBuilder romanNumber = new StringBuilder();
-		  for (int i = 0; i < arabicNumber; i++) {
-		    romanNumber.append("I");
-		  }
-			return romanNumber.toString();
+		else{
+			
+			for (int i = 0; i < arabicNumber; i++) {
+			    romanNumber.append("I");
+			  }
+		}
+		
+		return romanNumber.toString();
 	}
 
 }
