@@ -1,6 +1,12 @@
 package fr.softeam.kata.romanNumerals;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class RomanNumeral {
+	
+	private static final int[] ARABIC_NUMBERS  = { 1000,900,500,400,100,90,50,40,10,9,5,4,1 };
+	private static final String[] ROMAN_NUMBERS = { "M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I" };
+
 	/**
 	 * This function converts an Arabic number to a Roman one
 	 * @param arabicNumber
@@ -8,29 +14,14 @@ public class RomanNumeral {
 	 */
 	public static String convertArabicToRoman(int arabicNumber) {
 		
-		StringBuilder romanNumber = new StringBuilder();
-		int difference = arabicNumber ;
+		String romanNumber = StringUtils.EMPTY;
 		
-		if(difference == 10){
-			romanNumber.append("X");
-			difference -= 10;
-		}
-		
-		else if(difference == 9){
-			romanNumber.append("IX");
-			difference -= 9;
-		}
-		
-		else if(difference >= 5){
-			romanNumber.append("V");
-			difference -= 5;
-		}
-
-		for (int i = 0; i < difference; i++) {
-			 romanNumber.append("I");
-		}
-		
-		return romanNumber.toString();
+	      for (int i = 0; i < ARABIC_NUMBERS.length; i++) {
+	         while (arabicNumber >= ARABIC_NUMBERS[i]) {
+	        	 romanNumber += ROMAN_NUMBERS[i];
+	        	 arabicNumber -= ARABIC_NUMBERS[i];
+	         }
+	      }
+	      return romanNumber;
 	}
-
 }
