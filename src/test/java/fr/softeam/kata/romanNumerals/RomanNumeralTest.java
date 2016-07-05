@@ -36,6 +36,12 @@ public class RomanNumeralTest {
 	}
 	
 	@Test
+	public void convertNine() {
+		Assert.assertEquals("IX",RomanNumeral.convertArabicToRoman(9));
+	}
+	
+	
+	@Test
 	public void convertTen() {
 		Assert.assertEquals("X",RomanNumeral.convertArabicToRoman(10));
 	}

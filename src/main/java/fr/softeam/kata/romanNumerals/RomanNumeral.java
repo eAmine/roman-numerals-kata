@@ -7,25 +7,27 @@ public class RomanNumeral {
 	 * @return Roman number
 	 */
 	public static String convertArabicToRoman(int arabicNumber) {
+		
 		StringBuilder romanNumber = new StringBuilder();
+		int difference = arabicNumber ;
 		
-		if(arabicNumber == 5){
-			romanNumber.append("V");
-		}
-		
-		else if(arabicNumber == 10){
+		if(difference == 10){
 			romanNumber.append("X");
+			difference -= 10;
 		}
 		
-		else if(arabicNumber == 6){
-			romanNumber.append("VI");
+		else if(difference == 9){
+			romanNumber.append("IX");
+			difference -= 9;
 		}
 		
-		else{
-			
-			for (int i = 0; i < arabicNumber; i++) {
-			    romanNumber.append("I");
-			  }
+		else if(difference >= 5){
+			romanNumber.append("V");
+			difference -= 5;
+		}
+
+		for (int i = 0; i < difference; i++) {
+			 romanNumber.append("I");
 		}
 		
 		return romanNumber.toString();
