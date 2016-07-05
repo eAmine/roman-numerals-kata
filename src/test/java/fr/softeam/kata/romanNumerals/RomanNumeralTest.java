@@ -24,12 +24,16 @@ public class RomanNumeralTest {
 		Assert.assertEquals("III",RomanNumeral.convertArabicToRoman(3));
 	}
 	
-	
+
 	@Test
 	public void convertFive() {
 		Assert.assertEquals("V",RomanNumeral.convertArabicToRoman(5));
-	}
+	}	
 	
+	@Test
+	public void convertSix() {
+		Assert.assertEquals("VI",RomanNumeral.convertArabicToRoman(6));
+	}
 	
 	
 
