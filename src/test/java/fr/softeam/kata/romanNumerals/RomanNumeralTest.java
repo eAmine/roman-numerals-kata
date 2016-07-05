@@ -12,17 +12,17 @@ public class RomanNumeralTest {
 	
 
 	@Test
-	public void convert3ToThree() {
+	public void convert3ToIII() {
 		Assert.assertEquals("III",RomanNumeral.convertArabicToRoman(3));
 	}
 
 	@Test
-	public void convert6ToSix() {
+	public void convert6ToVI() {
 		Assert.assertEquals("VI",RomanNumeral.convertArabicToRoman(6));
 	}
 	
 	@Test
-	public void convert9ToNine() {
+	public void convert9ToIX() {
 		Assert.assertEquals("IX",RomanNumeral.convertArabicToRoman(9));
 	}
 	
