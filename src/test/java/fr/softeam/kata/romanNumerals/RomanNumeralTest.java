@@ -14,6 +14,11 @@ public class RomanNumeralTest {
 		Assert.assertEquals("I",RomanNumeral.convertArabicToRoman(1));
 	}
 	
+	@Test
+	public void convertFive() {
+		Assert.assertEquals("V",RomanNumeral.convertArabicToRoman(5));
+	}
+	
 	
 	
 
