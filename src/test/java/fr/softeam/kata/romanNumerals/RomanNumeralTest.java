@@ -15,6 +15,17 @@ public class RomanNumeralTest {
 	}
 	
 	@Test
+	public void convertTwo() {
+		Assert.assertEquals("II",RomanNumeral.convertArabicToRoman(2));
+	}
+	
+	@Test
+	public void convertThree() {
+		Assert.assertEquals("III",RomanNumeral.convertArabicToRoman(3));
+	}
+	
+	
+	@Test
 	public void convertFive() {
 		Assert.assertEquals("V",RomanNumeral.convertArabicToRoman(5));
 	}
