@@ -13,6 +13,10 @@ public class RomanNumeral {
 			romanNumber.append("V");
 		}
 		
+		else if(arabicNumber == 10){
+			romanNumber.append("X");
+		}
+		
 		else if(arabicNumber == 6){
 			romanNumber.append("VI");
 		}
