@@ -3,7 +3,7 @@ Roman Numerals KATA en java
 
 Ce repo est une implementation java de roman numeral kata. 
 
-Le programme prend en entrée un chiffre arabe/decimal et le converti en chiffre romain.
+Le programme prend en entrée un chiffre arabe/decimal et le convertit en chiffre romain.
 
 Exemples :
 
@@ -12,7 +12,7 @@ Exemples :
 - 90 = XC
 - 2016 = MMXVI
 
-Ci-dessous la table de correspendance utilisée pour réaliser la conversion:
+Ci-dessous la table de correspondance utilisée pour réaliser la conversion:
 
 *Symbole* | *Value*
 --- | ---
