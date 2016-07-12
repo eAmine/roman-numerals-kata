@@ -8,20 +8,22 @@ public class RomanNumeral {
 	private static final String[] ROMAN_NUMERALS = { "M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I" };
 
 	/**
-	 * This function converts an Arabic number to a Roman one
+	 * This function converts an Arabic number to a Roman numeral
 	 * @param arabicNumber
-	 * @return Roman number
+	 * @return RomanNumeral
 	 */
 	public static String convertArabicToRoman(int arabicNumber) {
 		
 		String romanNumeral = StringUtils.EMPTY;
 		
 	      for (int i = 0; i < ARABIC_NUMBERS.length; i++) {
-	         while (arabicNumber >= ARABIC_NUMBERS[i]) {
+	         
+	    	  while (arabicNumber >= ARABIC_NUMBERS[i]) {
 	        	 romanNumeral += ROMAN_NUMERALS[i];
 	        	 arabicNumber -= ARABIC_NUMBERS[i];
-	         }
+	    	  }
 	      }
+	      
 	      return romanNumeral;
 	}
 }
